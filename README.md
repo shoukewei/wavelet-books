@@ -1,4 +1,4 @@
-# wavelet-books
+# *Wavelet Transform in Practice: From Theory to Production-Ready Python Application* Book Series 
 This repository contains the example codes in 5 book series of  Wavelet Transform in Practice:  From Theory to Production-Ready Python Application
 
 <img width="1024" height="466" alt="image" src="https://github.com/user-attachments/assets/2cbc6910-696d-4191-a0e3-6adba61ac451" />
