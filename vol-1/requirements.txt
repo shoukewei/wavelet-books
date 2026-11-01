@@ -1,0 +1,29 @@
+# Core numerical & scientific computing
+numpy>=1.26.0
+scipy>=1.14.0
+
+# Wavelets (the main library used in all notebooks)
+PyWavelets>=1.8.0
+
+# Plotting & visualization
+matplotlib>=3.9.0
+
+# Image reading / writing (used for loading test images)
+imageio>=2.35.0
+
+# Optional but very commonly used in signal/image quality evaluation
+scikit-image>=0.24.0          # for SSIM, PSNR, NRMSE, etc.
+
+# If you're doing any denoising thresholding or advanced metrics
+scikit-learn>=1.5.0           # sometimes used for additional metrics or clustering
+
+# Jupyter / interactive usage (optional but very likely)
+jupyterlab>=4.2.0
+ipywidgets>=8.1.0             # for interactive sliders / plots if used
+
+# If you work with pandas DataFrames to organize results / energies
+pandas>=2.2.0                 # optional but frequently appears in analysis code
+
+# If you're working with 3D volumes / medical-style data
+pydicom>=2.4.0                # optional – only if reading DICOM
+nibabel>=5.2.0                # optional – only if reading NIfTI (.nii / .nii.gz)
