@@ -1,0 +1,44 @@
+# requirements.txt
+# Packages used across the five wavelet application chapters
+# (anomaly detection, stock analysis, speech denoising, steganography, data security)
+
+# Core scientific & wavelet stack ───────────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.10.0
+pywavelets>=1.4.0               # pywt – the central wavelet library
+
+# Plotting & visualization ──────────────────────────────────────────────────────
+matplotlib>=3.7.0
+# (removed: plotly not used in these chapters)
+
+# Data handling & I/O ───────────────────────────────────────────────────────────
+pandas>=2.0.0                   # very common for time series & tabular data
+
+# Stock / financial data ────────────────────────────────────────────────────────
+yfinance>=0.2.0                 # Yahoo Finance stock data downloader
+
+# High-performance analytical storage (stock chapter) ───────────────────────────
+duckdb>=0.9.0                   # DuckDB columnar database for time-series
+
+# Image processing (steganography) ──────────────────────────────────────────────
+opencv-python>=4.8.0            # cv2 – image loading, resizing, channels
+scikit-image>=0.20.0            # skimage – image metrics, io, color
+Pillow>=10.0.0                  # PIL – image manipulation
+imageio>=2.30.0                 # imageio – image read/write helpers
+
+# Audio / speech processing ─────────────────────────────────────────────────────
+librosa>=0.10.0                 # audio feature extraction & loading (very common)
+soundfile>=0.12.0               # reading/writing audio files (alternative to scipy.io.wavfile)
+
+# Machine learning baselines & comparisons (anomaly, security extensions) ───────
+scikit-learn>=1.3.0             # Isolation Forest, metrics, ROC-AUC, etc.
+
+# Additional packages discovered in notebooks
+cryptography>=40.0.0            # Fernet encryption used in data-security and steganography
+scikit-image>=0.20.0            # image processing utilities (metrics, color)
+Pillow>=10.0.0                  # PIL image support
+imageio>=2.30.0                 # image I/O helpers
+seaborn>=0.12.2                 # plotting style / visualization
+statsmodels>=0.14.0             # ADF test (time-series stationarity)
+datasets>=2.14.0                # huggingface datasets (audio demos)
+openai-whisper>=20230314        # optional ASR (Whisper) used conditionally in audio chapter
